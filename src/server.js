@@ -1,10 +1,10 @@
 import app from "./app.js";
-import { mogoDBConnect, initializeDB } from "./config/db.js";
+import { mongoDBConnect, initializeDB } from "./config/db.js";
 
 const port = process.env.PORT || 3000;
 
 // Database connection and initialization
-mogoDBConnect()
+mongoDBConnect()
   .then(() => initializeDB())
   .catch((err) => console.log("Database connection error:", err));
 

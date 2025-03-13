@@ -8,9 +8,11 @@ import Tax from "../models/tax.model.js";
 
 dotenv.config();
 
-export async function mogoDBConnect() {
+const mongo_uri = process.env.MONGO_URI;
+
+export async function mongoDBConnect() {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(mongo_uri);
     console.log("MongoDB connected!");
   } catch (err) {
     console.error(err.message);

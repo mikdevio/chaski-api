@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-export const { MONGODB_URL, PORT, SECRET_ACCESS_TOKEN } = process.env;
+export const { MONGODB_URI, PORT, SECRET_ACCESS_TOKEN } = process.env;
 
 export const FILENAME = fileURLToPath(import.meta.url);
 
