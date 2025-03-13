@@ -3,7 +3,7 @@ import { mongoDBConnect, initializeDB } from "./config/db.js";
 
 const port = process.env.PORT || 3000;
 
-console.log('🔍 Variables de entorno disponibles:', process.env);
+// console.log('🔍 Variables de entorno disponibles:', process.env);
 
 // Database connection and initialization
 mongoDBConnect()
